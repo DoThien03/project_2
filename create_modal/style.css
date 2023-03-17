@@ -46,11 +46,12 @@ button:hover {
     position: relative;
     width: 450px;
     overflow: hidden;
-    margin: auto;
+    margin: -150px auto;
     top: 50%;
     background-color: #fff;
     border-radius: 5px;
-    animation: modalShow 0.2s linear;
+    animation: modalShow 0.1s linear;
+
 }
 
 .modal__header {
@@ -95,12 +96,12 @@ button:hover {
 
 @keyframes modalShow {
     from {
-        top: -450px;
+        top: -250px;
         opacity: 0;
     }
 
     to {
-        top: 50%;
+        top: 0;
         opacity: 1;
     }
 }
